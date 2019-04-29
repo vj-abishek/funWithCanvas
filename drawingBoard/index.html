@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas tutorial</title>
+    <style>
+        .flex{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-content: center;
+        }
+        .rain{
+            background: royalblue;
+            padding: 5px;
+            border:none;
+            width:auto;
+            height: 30px;
+            color:#fff;
+            box-shadow: 3px 4px 5px rgba(0,0,0,0.1);
+            border-radius:6px;
+            margin-top: 10px
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <button id="rainbow" class="rain">Random color</button>
+        <button id="eraser" class="rain">Eraser </button>
+       <div>
+           <label for="blend">Blend mode</label>
+           <input type="checkbox" value="Blend mode" id="blend">
+       </div>
+        <h3>Abigo darwing board</h3>
+        <form id="color_form">
+                <label for="color">Choose colour:-</label>
+                <input type="color" id="color" value="#0000">
+                <button type="submit" >Save</button>
+
+        </form>
+       
+    </div>
+    <canvas id="canvas" style="border:1px solid #000;width:100%;height:500px"></canvas>
+  
+
+    <script src="script.js"> </script>
+</body>
+</html>
